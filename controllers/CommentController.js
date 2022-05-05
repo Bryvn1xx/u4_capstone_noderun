@@ -13,12 +13,12 @@ const getComments = async (req, res) => {
 
 const getComment = async (req, res) => {
   try {
-    let feedId = parseInt(req.params.feed_id)
     let postId = parseInt(req.params.post_id)
-    const post = await Post.findAll({
-      where: { id: postId, feedId: feedId}
+    let commentId = parseInt(req.params.comment_id)
+    const comment = await Comment.findAll({
+      where: { id: commentId, postId: postId}
     })
-    res.send(post)
+    res.send(comment)
   } catch (error) {
     throw error
   }
@@ -26,13 +26,13 @@ const getComment = async (req, res) => {
 
 const createComment = async (req, res) => {
   try {
-    let feedId = parseInt(req.params.feed_id)
-    let newPost = {
-      feedId,
+    let postId = parseInt(req.params.post_id)
+    let newComment = {
+      postId,
       ...req.body
     }
-    let post = await Post.create(newPost)
-    res.send(post)
+    let comment = await Comment.create(newComment)
+    res.send(comment)
   } catch (error) {
     throw error
   }
@@ -40,11 +40,11 @@ const createComment = async (req, res) => {
 
 const updateComment = async (req, res) => {
   try {
-    let postId = parseInt(req.params.post_id)
-    let updatedPost = await Post.update(req.body, {
-      where: { id: postId}
+    let commentId = parseInt(req.params.comment_id)
+    let updatedComment = await Comment.update(req.body, {
+      where: { id: commentId}
     })
-    res.send(updatedPost)
+    res.send(updatedComment)
   } catch (error) {
     throw error
   }
@@ -52,12 +52,12 @@ const updateComment = async (req, res) => {
 
 const destroyComment = async (req, res) => {
   try {
-    let postId = parseInt(req.params.post_id)
-    await Post.destroy({
-      where: { id: postId }
+    let commentId = parseInt(req.params.comment_id)
+    await Comment.destroy({
+      where: { id: commentId }
     })
     res.send({
-      message: `Post with id of ${postId} has been destroyed`
+      message: `Comment with the id of ${commentId} has been destroyed`
     })
     } catch (error) {
       throw error
