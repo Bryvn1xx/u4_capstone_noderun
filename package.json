@@ -1,0 +1,24 @@
+{
+  "name": "u4_capstone_noderun",
+  "version": "1.0.0",
+  "description": "## Date: May 4, 2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bryvn1xx/u4_capstone_noderun.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bryvn1xx/u4_capstone_noderun/issues"
+  },
+  "homepage": "https://github.com/Bryvn1xx/u4_capstone_noderun#readme",
+  "dependencies": {
+    "pg": "^8.7.3",
+    "sequelize": "^6.19.0"
+  }
+}
