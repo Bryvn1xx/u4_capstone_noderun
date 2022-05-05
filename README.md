@@ -28,7 +28,7 @@
 
 ## Component Hierarchy Diagram
 
-![image](/assets/COMP%20DIAGRAM.png)
+![image](/assets/u4_Component%20Hierarchy%20Diagram.png)
 
 # Future Plans
 
