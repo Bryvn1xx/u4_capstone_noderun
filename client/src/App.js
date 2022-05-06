@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from 'react-router'
+import Home from './pages/Home'
+import Nav from './components/Nav'
+import { useState, useEffect } from 'react'
+import axios from 'axios'
 
-function App() {
+const App = () => {
+  const [feed, setFeed] = useState([])
+
+
+  
+  useEffect(() => {
+    const getFeeds = async (req, res) => {
+      try {
+        const res = axios.get('http://localhost:3001/api/feed')
+        console.log('res', feed)
+        setFeed(res.data)
+      } catch(err) {
+        console.log(err)
+      }
+    }
+    getFeeds()
+  },[])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      
+        <Routes>
+          <Route path="/" element={ <Home feed={feed}/> } />
+        </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,7 +1,21 @@
-const Home = () => {
+import HomeComponent from "../components/HomeComponent"
+
+// import HomeComponent from '../components/HomeComponent'
+const Home = ({feed}) => {
+  console.log('feed', feed)
   return (
-    <div>
-      <h2>hello</h2>
+    <div className='home-page'>
+      <div>
+        <HomeComponent />
+      </div> 
+
+
+
+
+
+
     </div>
   )
 }
+
+export default Home

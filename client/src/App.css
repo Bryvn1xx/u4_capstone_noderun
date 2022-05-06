@@ -1,10 +1,21 @@
 .App {
   text-align: center;
+  color: red
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.home-component {
+  background-color: blue;
+  color: black;
+}
+
+.home-page {
+  color: black;
+  background-color: red;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,7 +25,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
