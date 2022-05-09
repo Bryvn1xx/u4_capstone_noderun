@@ -17,6 +17,14 @@ module.exports = {
       description: {
         type: Sequelize.STRING
       },
+      postId: {
+        type: Sequelize.INTEGER,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'posts',
+          key: 'id'
+        }
+      },
       feedId: {
         type: Sequelize.INTEGER,
         onDelete: 'CASCADE',

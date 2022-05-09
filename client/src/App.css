@@ -10,12 +10,17 @@
 
 .home-component {
   background-color: blue;
-  color: black;
+  color: white;
 }
 
 .home-page {
   color: black;
   background-color: red;
+}
+
+.postcard-img {
+  height: 250px;
+  width: 700px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

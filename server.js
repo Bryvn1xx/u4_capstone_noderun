@@ -6,6 +6,7 @@ const logger = require('morgan')
 // const PostController = require('./controllers/PostController')
 const AppRouter = require('./routes/AppRouter')
 const PORT = process.env.PORT || 3001
+// const controller = require('./controllers/FeedController')
 
 app.use(cors())
 app.use(logger('dev'))
@@ -13,5 +14,5 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => res.json({ message: 'Server Works' }))
-app.get('/api', AppRouter)
+app.use('/api', AppRouter)
 app.listen(PORT, () => console.log(`Server Started On Port: ${PORT}`))

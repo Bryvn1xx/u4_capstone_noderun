@@ -17,7 +17,7 @@ const getPost = async (req, res) => {
     let feedId = parseInt(req.params.feed_id)
     let postId = parseInt(req.params.post_id)
     const post = await Post.findAll({
-      where: { id: postId, feedId: feedId}
+      where: { id: postId, feedId: feedId }
     })
     res.send(post)
   } catch (error) {
@@ -43,7 +43,7 @@ const updatePost = async (req, res) => {
   try {
     let postId = parseInt(req.params.post_id)
     let updatedPost = await Post.update(req.body, {
-      where: { id: postId}
+      where: { id: postId }
     })
     res.send(updatedPost)
   } catch (error) {
@@ -60,10 +60,10 @@ const destroyPost = async (req, res) => {
     res.send({
       message: `Post with id of ${postId} has been destroyed`
     })
-    } catch (error) {
-      throw error
-    }
+  } catch (error) {
+    throw error
   }
+}
 
 
 

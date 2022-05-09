@@ -1,6 +1,7 @@
-// const Router = require('express').Router()
-// const controller = require('../controllers/FeedController')
+const Router = require('express').Router()
+const controller = require('../controllers/FeedController')
 
-// Router.get('/feeds', controller.getFeeds)
+Router.get('/', controller.getFeeds)
+Router.get('/:feed_id/posts', controller.getFeedPosts)
 
-// module.exports = Router
+module.exports = Router

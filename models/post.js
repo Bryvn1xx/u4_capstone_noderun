@@ -26,6 +26,16 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     img: DataTypes.STRING,
     description: DataTypes.STRING,
+    postId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      field: 'postId',
+      onDelete: 'CASCADE',
+      references: {
+        model: 'posts',
+        key: 'id'
+      }
+    },
     feedId: {
       type: DataTypes.INTEGER,
       allowNull: false,
