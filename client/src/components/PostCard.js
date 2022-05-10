@@ -17,7 +17,8 @@ const PostCard = ({ post }) => {
           <img className='postcard-img' src={post.img} alt='404'></img>
         </Link>
         <div>{post.name}</div>
-        <button onClick={() => deletePost(post.id)}></button>
+        <button onClick={() => deletePost(post.id)}>nuke</button>
+        <Link to={`/updatepost/${post.id}`}>Update</Link>
       </div>
     </div>
   )

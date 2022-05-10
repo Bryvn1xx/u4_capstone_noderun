@@ -7,6 +7,7 @@ import PostCard from './components/PostCard'
 import PostPage from './pages/PostPage'
 import About from './pages/About'
 import CreatePost from './pages/CreatePost'
+import UpdatePost from './pages/UpdatePost'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
@@ -57,6 +58,7 @@ const App = () => {
         <Route path='/posts/:postId' element={<PostPage posts={posts} />} />
         <Route path='/about' element={<About />} />
         <Route path='/createpost' element={<CreatePost />} />
+        <Route path='/updatepost/:post_id' element={<UpdatePost />} />
       </Routes>
     </div >
   )

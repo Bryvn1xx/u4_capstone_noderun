@@ -1,4 +1,4 @@
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, Navigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
@@ -6,6 +6,11 @@ const PostPage = () => {
   let { postId } = useParams()
   const [comments, setComments] = useState()
   const [post, setPost] = useState({})
+  const [addComment, setAddComment] = useState({
+    name: '',
+    description: '',
+    postId: postId
+  })
 
   const getPost = async () => {
     try {
@@ -27,13 +32,16 @@ const PostPage = () => {
     }
   }
 
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    const res = await axios.post(
+      `http://localhost:3001/api/comments/${postId}`,
+      addComment
+    )
+  }
+
 
   useEffect(() => {
-    // let selectedPost = posts.find(
-    //   (post) => post.id === parseInt(id)
-    // )
-
-
     getCommentsByPost()
     getPost()
     // selectedPost()
@@ -54,8 +62,42 @@ const PostPage = () => {
               </div>
             ))}
         </div>
+        <div>
+          <h2>Create Comment</h2>
+          <div>
+            <form onSubmit={handleSubmit}>
+              <input
+                className='form'
+                type='text'
+                name='name'
+                placeholder='name'
+                value={addComment.name}
+                onChange={(e) => setAddComment({ ...addComment, name: e.target.value })}
+              />
+              <input
+                className='form'
+                type='text'
+                name='description'
+                placeholder='description'
+                value={addComment.description}
+                onChange={(e) => setAddComment({ ...addComment, description: e.target.value })}
+              />
+              <input
+                className='form'
+                type='text'
+                name='postId'
+                placeholder='postId'
+                value={addComment.postId}
+                onChange={(e) => setAddComment({ ...addComment, postId: e.target.value })}
+              />
+
+
+              <button type='submit'>Comment</button>
+            </form>
+          </div>
+        </div>
       </div>
-    </div >
+    </div>
   )
 }
 

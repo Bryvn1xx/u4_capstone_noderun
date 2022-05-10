@@ -54,6 +54,7 @@ const updatePost = async (req, res) => {
 const destroyPost = async (req, res) => {
   try {
     let postId = parseInt(req.params.post_id)
+    console.log('6543', req.params.post_id)
     await Post.destroy({
       where: { id: postId }
     })
