@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Nav from './components/Nav'
 import PostCard from './components/PostCard'
 import PostPage from './pages/PostPage'
+import Support from './pages/Support'
 import About from './pages/About'
 import CreatePost from './pages/CreatePost'
 import UpdatePost from './pages/UpdatePost'
@@ -57,6 +58,7 @@ const App = () => {
         <Route path="/" element={<Home feed={feed} posts={posts} />} />
         <Route path='/posts/:postId' element={<PostPage posts={posts} />} />
         <Route path='/about' element={<About />} />
+        <Route path='/support' element={<Support />} />
         <Route path='/createpost' element={<CreatePost />} />
         <Route path='/updatepost/:post_id' element={<UpdatePost />} />
       </Routes>

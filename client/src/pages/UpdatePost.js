@@ -10,7 +10,7 @@ const UpdatePost = () => {
     name: '',
     img: '',
     description: '',
-    postId: null,
+    postId: post_id,
     feedId: null
   })
 

@@ -1,4 +1,4 @@
-import { useParams, Link, Navigate } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
@@ -6,6 +6,7 @@ const PostPage = () => {
   let { postId } = useParams()
   const [comments, setComments] = useState()
   const [post, setPost] = useState({})
+  let navigate = useNavigate()
   const [addComment, setAddComment] = useState({
     name: '',
     description: '',
@@ -38,6 +39,7 @@ const PostPage = () => {
       `http://localhost:3001/api/comments/${postId}`,
       addComment
     )
+
   }
 
 
@@ -51,16 +53,16 @@ const PostPage = () => {
 
     <div>
       <div>PostPage</div>
-      <div>
+      <div className='postpage-main'>
 
-        <img className='postpage-img' src={postId.img} />
+        <img className='postpage-img' src={post.img} />
 
-        <div>
+        <div className='comments-block'>
           {comments &&
             comments.map((comment) => (
               <div>
-                <h2 className='comment-post'>{comment.name}: {comment.description}</h2>
-                {/* <h2>description: {comment.description}</h2> */}
+                <h2 className='comment-post'>{comment.name}:</h2>
+                <h2 className='comment-post-desc'>{comment.description}</h2>
               </div>
             ))}
         </div>
