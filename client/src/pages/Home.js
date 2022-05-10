@@ -11,8 +11,9 @@ const Home = ({ feed, posts }) => {
   return (
     <div className='home-page'>
       <h2>HomePage</h2>
+      {/* <h2>{feed.name}</h2> */}
 
-      <div>
+      <div className='postcard-card'>
         {/* <HomeComponent feed={feed} posts={posts} /> */}
 
         {posts &&

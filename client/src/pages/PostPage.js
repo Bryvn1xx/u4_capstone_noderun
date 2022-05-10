@@ -46,19 +46,21 @@ const PostPage = () => {
     getPost()
     // selectedPost()
   }, [postId])
-
+  console.log(post)
   return (
 
     <div>
       <div>PostPage</div>
       <div>
-        <img className='postpage-img' src={post.img}></img>
+
+        <img className='postpage-img' src={postId.img} />
+
         <div>
           {comments &&
             comments.map((comment) => (
               <div>
-                <h2>name: {comment.name}</h2>
-                <h2>description: {comment.description}</h2>
+                <h2 className='comment-post'>{comment.name}: {comment.description}</h2>
+                {/* <h2>description: {comment.description}</h2> */}
               </div>
             ))}
         </div>

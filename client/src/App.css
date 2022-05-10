@@ -1,6 +1,8 @@
+* {
+}
 .App {
   text-align: center;
-  color: red
+  background-image: linear-gradient(to right, grey, white)
 }
 
 .App-logo {
@@ -15,7 +17,62 @@
 
 .home-page {
   color: black;
-  background-color: red;
+  background-image: linear-gradient(to bottom right, grey, white)
+}
+.navbar {
+  list-style-type: none;
+  margin: 0px;
+  padding: 10px;
+  font-family: 'Jaldi';
+  font-size: 20px;
+  color: black;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 1vh;
+}
+a:hover {
+  color: red;
+}
+.dlt-btn {
+  ox-shadow:inset 0px 0px 18px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+  text-shadow:0px 3px 0px #854629;
+}
+
+.edt-btn {
+  ox-shadow:inset 0px 0px 18px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+  text-shadow:0px 3px 0px #854629;
+  width: 40px;
+}
+
+.comment-post {
+  color: black;
+  border-style: boxed;
 }
 
 .postcard-img {
