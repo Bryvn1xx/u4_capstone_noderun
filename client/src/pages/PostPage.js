@@ -32,6 +32,9 @@ const PostPage = () => {
       console.log(err)
     }
   }
+  // const deleteComment = async () => {
+  //   await axios.delete(`http://localhost:3001/api/comments/${comment.id}`)
+  // }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -49,6 +52,7 @@ const PostPage = () => {
     // selectedPost()
   }, [postId])
   console.log(post)
+
   return (
 
     <div>
@@ -63,6 +67,7 @@ const PostPage = () => {
               <div>
                 <h2 className='comment-post'>{comment.name}:</h2>
                 <h2 className='comment-post-desc'>{comment.description}</h2>
+                {/* <button className='dlt-cmnt' onClick={() => deleteComment(comment.id)}>Delete</button> */}
               </div>
             ))}
         </div>
