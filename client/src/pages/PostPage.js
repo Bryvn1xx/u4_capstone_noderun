@@ -46,6 +46,7 @@ const PostPage = () => {
   }
 
 
+
   useEffect(() => {
     getCommentsByPost()
     getPost()
