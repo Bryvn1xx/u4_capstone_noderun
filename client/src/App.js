@@ -35,6 +35,8 @@ const App = () => {
       console.log('err', err)
     }
   }
+
+
   const getPostsByFeed = async (req, res) => {
     try {
       const posts = await axios.get(`http://localhost:3001/api/posts/1`)

@@ -86,13 +86,16 @@ a:hover {
   color: rgb(2, 2, 125);
   border-style: boxed;
 }
-.comment-post-desc {
 
-}
 
 .postcard-img {
   height: 250px;
   width: 700px;
+}
+
+.postpage-img {
+  height: 500px;
+  width: 1200px;
 }
 
 .about-paragraph {

@@ -16,8 +16,8 @@ const PostPage = () => {
   const getPost = async () => {
     try {
       const post = await axios.get(`http://localhost:3001/api/posts/${postId}/1`)
-      console.log('post', post.data)
-      setPost(post.data)
+      console.log('post', post.data[0])
+      setPost(post.data[0])
     } catch (err) {
       console.log(err)
     }
@@ -56,7 +56,8 @@ const PostPage = () => {
   return (
 
     <div>
-      <div>PostPage</div>
+      <h2>PostPage</h2>
+      <h2>{post.name}</h2>
       <div className='postpage-main'>
 
         <img className='postpage-img' src={post.img} />
