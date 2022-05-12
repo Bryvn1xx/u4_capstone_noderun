@@ -10,6 +10,7 @@ import About from './pages/About'
 import CreatePost from './pages/CreatePost'
 import UpdatePost from './pages/UpdatePost'
 import Windows from './pages/Windows'
+import WindowsPostPage from './pages/WindowsPostPage'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
@@ -76,6 +77,7 @@ const App = () => {
         <Route path='/createpost' element={<CreatePost />} />
         <Route path='/updatepost/:post_id' element={<UpdatePost />} />
         <Route path='/windowsfeed' element={<Windows windowsFeed={windowsFeed} />} />
+        <Route path='/windowsfeed/posts/:postId' element={<WindowsPostPage />} />
       </Routes>
     </div >
   )

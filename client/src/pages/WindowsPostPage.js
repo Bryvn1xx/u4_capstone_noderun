@@ -5,7 +5,7 @@ import axios from 'axios'
 const WindowsPostPage = () => {
   let { postId } = useParams()
   const [comments, setComments] = useState()
-  const [windowsPost, setWindowsPost] = useState({})
+  const [post, setPost] = useState({})
   let navigate = useNavigate()
   const [addComment, setAddComment] = useState({
     name: '',
@@ -15,8 +15,8 @@ const WindowsPostPage = () => {
 
   const getPost = async () => {
     try {
-      const post = await axios.get(`http://localhost:3001/api/windowsfeed/posts/${postId}/1`)
-      console.log('post', post.data[0])
+      const post = await axios.get(`http://localhost:3001/api/posts/${postId}/2`)
+      console.log('8765post', post.data[0])
       setPost(post.data[0])
     } catch (err) {
       console.log(err)
@@ -25,8 +25,8 @@ const WindowsPostPage = () => {
 
   const getCommentsByPost = async () => {
     try {
-      const comments = await axios.get(`http://localhost:3001/api/windowsfeed/comments/${postId}`)
-      console.log('comments', comments.data)
+      const comments = await axios.get(`http://localhost:3001/api/comments/${postId}`)
+      console.log('8765omments', comments.data)
       setComments(comments.data)
     } catch (err) {
       console.log(err)
@@ -119,4 +119,4 @@ const WindowsPostPage = () => {
   )
 }
 
-export default PostPage
+export default WindowsPostPage
