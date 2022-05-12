@@ -3,6 +3,7 @@
   height: 100vh;
   text-align: center;
   background-image: linear-gradient(to right, grey, white)
+  
 }
 
 .App-logo {
@@ -17,7 +18,7 @@
 
 .home-page {
   color: black;
-  background-image: linear-gradient(to bottom right, grey, white)
+  background-image: url('https://as2.ftcdn.net/v2/jpg/00/64/63/55/1000_F_64635514_39JYmOURA0Lol23FmEamQFhceN3FagQU.jpg')
 }
 .about-paragraph {
   display: flex;
@@ -87,10 +88,14 @@ a:hover {
   border-style: boxed;
 }
 
+/* .postpage-bar {
+  background-color: red;
+} */
 
 .postcard-img {
   height: 250px;
   width: 700px;
+  border: solid black;
 }
 
 .postpage-img {
@@ -102,8 +107,8 @@ a:hover {
   padding: 25px;
   /* border: solid; */
   /* background-image: linear-gradient(to left red, blue); */
-  background: linear-gradient(to left, grey, white, grey);
-  border-radius: 25px;
+  background: linear-gradient(to left, blACK, white, BLACK);
+  border-radius: 10px;
 }
 .about-paragraph {
   font-size: 20px;

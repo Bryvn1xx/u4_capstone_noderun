@@ -9,6 +9,7 @@ import Support from './pages/Support'
 import About from './pages/About'
 import CreatePost from './pages/CreatePost'
 import UpdatePost from './pages/UpdatePost'
+import Windows from './pages/Windows'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
@@ -16,6 +17,7 @@ const App = () => {
   const [feed, setFeed] = useState()
   const [posts, setPosts] = useState()
   const [comments, setComments] = useState([])
+  const [windowsFeed, setWindowsFeed] = useState()
 
   // const getCommentsByPost = async () => {
   //   try {
@@ -36,6 +38,15 @@ const App = () => {
     }
   }
 
+  const getWindowsFeed = async (req, res) => {
+    try {
+      const windowsFeed = await axios.get(`http://localhost:3001/api/posts/2`)
+      console.log('windowsfeed', windowsFeed)
+      setWindowsFeed(windowsFeed.data)
+    } catch (err) {
+      console.log(err)
+    }
+  }
 
   const getPostsByFeed = async (req, res) => {
     try {
@@ -49,6 +60,7 @@ const App = () => {
   useEffect(() => {
     getFeeds()
     getPostsByFeed()
+    getWindowsFeed()
     // getCommentsByPost()
   }, [])
 
@@ -63,6 +75,7 @@ const App = () => {
         <Route path='/support' element={<Support />} />
         <Route path='/createpost' element={<CreatePost />} />
         <Route path='/updatepost/:post_id' element={<UpdatePost />} />
+        <Route path='/windowsfeed' element={<Windows windowsFeed={windowsFeed} />} />
       </Routes>
     </div >
   )

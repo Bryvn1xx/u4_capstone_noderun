@@ -2,10 +2,10 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
-const PostPage = () => {
+const WindowsPostPage = () => {
   let { postId } = useParams()
   const [comments, setComments] = useState()
-  const [post, setPost] = useState({})
+  const [windowsPost, setWindowsPost] = useState({})
   let navigate = useNavigate()
   const [addComment, setAddComment] = useState({
     name: '',
@@ -15,7 +15,7 @@ const PostPage = () => {
 
   const getPost = async () => {
     try {
-      const post = await axios.get(`http://localhost:3001/api/posts/${postId}/1`)
+      const post = await axios.get(`http://localhost:3001/api/windowsfeed/posts/${postId}/1`)
       console.log('post', post.data[0])
       setPost(post.data[0])
     } catch (err) {
@@ -25,7 +25,7 @@ const PostPage = () => {
 
   const getCommentsByPost = async () => {
     try {
-      const comments = await axios.get(`http://localhost:3001/api/comments/${postId}`)
+      const comments = await axios.get(`http://localhost:3001/api/windowsfeed/comments/${postId}`)
       console.log('comments', comments.data)
       setComments(comments.data)
     } catch (err) {
