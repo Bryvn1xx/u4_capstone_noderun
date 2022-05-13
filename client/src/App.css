@@ -39,11 +39,14 @@
   float: right;
 }
 .navbox {
+  background-color: grey;
   padding: 15px;
   height: 30px;
   width: 100%;
 }
 .navbar {
+  width: 25%;
+  float: left;
   display: inline;
   font-size: 20px;
 }
