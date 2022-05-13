@@ -45,12 +45,21 @@
   height: 30px;
   width: 100%;
 }
+.box {
+  justify-content: center;
+}
 .form {
+  justify-content: center;
+  display: inline-block;
   padding: 10px;
   margin: 10px;
+  border-radius: 5px;
+  width: 50%;
+  float:
+
 }
 .create-comment-form {
-  
+  justify-content: center;
 }
 .navbar {
   float: left;

@@ -85,15 +85,15 @@ const PostPage = () => {
               </div>
             ))}
         </div>
-        <div>
+        <div className='box'>
           <h2>Create Comment</h2>
-          <div>
+          <div className='create-comment-form'>
             <form className='create-comment-form' onSubmit={handleSubmit}>
               <input
                 className='form'
                 type='text'
                 name='name'
-                placeholder='name'
+                placeholder='Name'
                 value={addComment.name}
                 onChange={(e) => setAddComment({ ...addComment, name: e.target.value })}
               />
@@ -101,7 +101,7 @@ const PostPage = () => {
                 className='form'
                 type='text'
                 name='description'
-                placeholder='description'
+                placeholder='Description'
                 value={addComment.description}
                 onChange={(e) => setAddComment({ ...addComment, description: e.target.value })}
               />
@@ -115,7 +115,7 @@ const PostPage = () => {
               />
 
 
-              <button type='submit'>Comment</button>
+              <button className='form' type='submit'>Comment</button>
             </form>
           </div>
         </div>
