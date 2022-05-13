@@ -124,7 +124,16 @@ a:hover {
 
 .comment-post {
   color: rgb(2, 2, 125);
-  border-style: boxed;
+  
+}
+.comment-post-desc {
+  border: 1px;
+  background-color: #0b93f6;
+  border-radius: 25px;
+  padding: 12px;
+  margin: 2px;
+  display: inline-block;
+  color: white;
 }
 
 /* .postpage-bar {
