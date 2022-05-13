@@ -117,9 +117,7 @@ a:hover {
   border: solid black;
 }
 .home-block {
-  justify-content: center;
-  height: 600px;
-  width: 1200px;
+  
 }
 .home-quote {
   justify-content: center;
@@ -138,10 +136,7 @@ a:hover {
   color: white;
 }
 .home-img {
-  margin: 50px;
-  padding: 50px;
-  justify-content: center;
-  height: auto;
+  
 }
 
 .postcard-container {

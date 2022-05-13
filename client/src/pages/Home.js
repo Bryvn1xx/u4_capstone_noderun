@@ -14,9 +14,6 @@ const Home = ({ feed, posts }) => {
       {/* <h2>{feed.name}</h2> */}
       <div className='home-block'>
         <img className='home-img' src='/noderun-logo.png'></img>
-        <div>
-          <p2 className='home-quote'>lkjhgfdsdfghjklkjhfffffffffgjyhtgrexcvtbynumunybtvrcvbnumi,munybtvrcecvtbynumimunybtvrcvtbynumiunybtvrtbynumiunybtgfdsdfghjjhgfdsdfghjjhgfdsdfghjhgfdfg</p2>
-        </div>
       </div>
       <div className='postcard-card'>
         {/* <HomeComponent feed={feed} posts={posts} /> */}
