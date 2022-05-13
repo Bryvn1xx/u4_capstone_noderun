@@ -68,7 +68,6 @@ const App = () => {
   return (
     <div className="App">
       <Nav />
-      {/* <PostCard feed={feed} posts={posts} /> */}
       <Routes>
         <Route path="/" element={<Home feed={feed} posts={posts} />} />
         <Route path='/posts/:postId' element={<PostPage posts={posts} />} />

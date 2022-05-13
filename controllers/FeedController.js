@@ -22,8 +22,21 @@ const getFeedPosts = async (req, res) => {
   }
 }
 
+const createFeed = async (req, res) => {
+  try {
+    let newFeed = {
+      ...req.body
+    }
+    let feed = await Feed.create(newFeed)
+    res.send(feed)
+  } catch (error) {
+    throw error
+  }
+}
+
 module.exports = {
   getFeeds,
-  getFeedPosts
+  getFeedPosts,
+  createFeed
 
 }

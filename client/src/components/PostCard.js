@@ -18,7 +18,7 @@ const PostCard = ({ post }) => {
         <Link to={`/posts/${post.id}`} >
           <img className='postcard-img' src={post.img} alt='404'></img>
         </Link>
-        <div>{post.name}</div>
+        <h2 className='post-name'>{post.name}</h2>
         <div className='homepage-buttons'>
           <button className='dlt-btn' onClick={() => deletePost(post.id)}>Delete</button>
           <Link className='edt-btn' to={`/updatepost/${post.id}`}>Edit</Link>
