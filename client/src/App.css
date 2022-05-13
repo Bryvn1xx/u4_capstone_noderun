@@ -39,13 +39,20 @@
   float: right;
 }
 .navbox {
+  box-shadow: 2px 3px;
   background-color: grey;
   padding: 15px;
   height: 30px;
   width: 100%;
 }
+.form {
+  padding: 10px;
+  margin: 10px;
+}
+.create-comment-form {
+  
+}
 .navbar {
-  width: 25%;
   float: left;
   display: inline;
   font-size: 20px;

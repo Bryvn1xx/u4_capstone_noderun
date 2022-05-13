@@ -6,6 +6,7 @@ const PostPage = () => {
   let { postId } = useParams()
   const [comments, setComments] = useState()
   const [post, setPost] = useState({})
+  const [likes, setLikes] = useState(0)
   let navigate = useNavigate()
   const [addComment, setAddComment] = useState({
     name: '',
@@ -42,6 +43,7 @@ const PostPage = () => {
       `http://localhost:3001/api/comments/${postId}`,
       addComment
     )
+    navigate(`/posts/${postId}`)
 
   }
 
@@ -49,7 +51,9 @@ const PostPage = () => {
   //   let getGreen = document.getElementById('postpage-bar').style.color = 'green';
   // }
 
-
+  const clickLike = () => {
+    likes = 10
+  }
 
   useEffect(() => {
     getCommentsByPost()
@@ -76,6 +80,7 @@ const PostPage = () => {
               <div>
                 <h2 className='comment-post'>{comment.name}:</h2>
                 <h2 className='comment-post-desc'>{comment.description}</h2>
+                {/* <button onClick={() => clickLike(setLikes)}>Like{likes}</button> */}
                 {/* <button className='dlt-cmnt' onClick={() => deleteComment(comment.id)}>Delete</button> */}
               </div>
             ))}
@@ -83,7 +88,7 @@ const PostPage = () => {
         <div>
           <h2>Create Comment</h2>
           <div>
-            <form onSubmit={handleSubmit}>
+            <form className='create-comment-form' onSubmit={handleSubmit}>
               <input
                 className='form'
                 type='text'
