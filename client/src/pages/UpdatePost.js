@@ -67,7 +67,7 @@ const UpdatePost = () => {
             value={updatePost.feedId}
             onChange={(e) => setUpdatePost({ ...updatePost, feedId: e.target.value })}
           />
-          <button type='submit'>Update</button>
+          <button className='form' type='submit'>Update</button>
         </form>
       </div>
     </div>

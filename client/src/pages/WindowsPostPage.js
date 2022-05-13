@@ -110,7 +110,7 @@ const WindowsPostPage = () => {
               />
 
 
-              <button type='submit'>Comment</button>
+              <button className='form' type='submit'>Comment</button>
             </form>
           </div>
         </div>
