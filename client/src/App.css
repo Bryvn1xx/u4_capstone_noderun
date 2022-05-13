@@ -39,7 +39,8 @@
   float: right;
 }
 .navbox {
-  
+  height: 30px;
+  width: 100%;
 }
 .navbar {
   display: inline;
