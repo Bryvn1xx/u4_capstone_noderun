@@ -39,6 +39,7 @@
   float: right;
 }
 .navbox {
+  padding: 15px;
   height: 30px;
   width: 100%;
 }
