@@ -20,11 +20,6 @@ const Home = ({ feed, posts }) => {
           ))}
       </div>
 
-
-
-
-
-
     </div >
   )
 }
