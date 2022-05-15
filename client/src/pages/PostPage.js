@@ -47,12 +47,6 @@ const PostPage = () => {
 
   }
 
-  // const solved = () => {
-  //   let getGreen = document.getElementById('postpage-bar').style.color = 'green';
-  // }
-
-
-
   useEffect(() => {
     getCommentsByPost()
     getPost()
