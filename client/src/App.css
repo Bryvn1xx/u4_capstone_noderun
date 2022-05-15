@@ -31,6 +31,12 @@
   width: 90%;
   padding: 50px;
 }
+.support-quote {
+  font-size: 35px;
+  width: 50%;
+  float: left;
+  text-align: left
+}
 .about-paragraph {
   
   width: 50%;
