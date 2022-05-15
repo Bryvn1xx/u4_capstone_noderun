@@ -42,6 +42,7 @@
 .support-socials {
   font-size: 30px;
   width: 50%;
+  float: right;
 }
 
 .about-paragraph {
