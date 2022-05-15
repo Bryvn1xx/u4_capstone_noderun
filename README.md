@@ -30,6 +30,19 @@
 
 ![image](/assets/u4_Component%20Hierarchy%20Diagram.png)
 
+## Screenshot
+![image](/assets/noderun-screenshot.png)
+
 # Future Plans
+- User auth
+- Premium Membership
+- Linux Support
+- Virtual Environment Support
+- Customer Support
+- AI ChatBot
 
 # Credits
+- [CSS Docs](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [React Icons](https://react-icons.github.io/react-icons/icons?name=fa)
+- [StackOverflow](https://stackoverflow.com/)
+- [Adobe](https://www.adobe.com/express/feature/design/color-palette)
