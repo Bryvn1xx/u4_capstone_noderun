@@ -135,6 +135,11 @@ a:hover {
   display: inline-block;
   color: white;
 }
+.form:hover {
+  background-color: #0b93f6;
+  transition: 0.5s;
+  
+}
 
 /* .postpage-bar {
   background-color: red;
@@ -177,7 +182,7 @@ a:hover {
   /* border: solid; */
   /* background-image: linear-gradient(to left red, blue); */
   /* background: linear-gradient(to left, #15133C, white, #15133C); */
-  background-color: rgb(67, 67, 67);
+  background-color: grey;
   border-radius: 10px;
 }
 .postcard-card {

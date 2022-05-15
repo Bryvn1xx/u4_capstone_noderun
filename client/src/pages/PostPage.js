@@ -43,7 +43,7 @@ const PostPage = () => {
       `http://localhost:3001/api/comments/${postId}`,
       addComment
     )
-    navigate(`/posts/${postId}`)
+    navigate(`/`)
 
   }
 
@@ -51,9 +51,7 @@ const PostPage = () => {
   //   let getGreen = document.getElementById('postpage-bar').style.color = 'green';
   // }
 
-  const clickLike = () => {
-    likes = 10
-  }
+
 
   useEffect(() => {
     getCommentsByPost()
