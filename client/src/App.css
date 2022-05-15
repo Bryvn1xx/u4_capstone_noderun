@@ -161,6 +161,10 @@ a:hover {
 .home-block {
   
 }
+.windows-logo {
+  font-size: 100px;
+  padding: 50px;
+}
 .home-quote {
   justify-content: center;
   height: 250px;

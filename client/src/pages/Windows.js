@@ -1,4 +1,6 @@
 import WindowsPostCard from '../components/WindowsPostCard'
+import { FaWindows } from 'react-icons/fa'
+
 const Windows = ({ windowsFeed, posts }) => {
   console.log('Wfeeds', windowsFeed)
 
@@ -6,7 +8,8 @@ const Windows = ({ windowsFeed, posts }) => {
 
   return (
     < div className='home-page' >
-      <h2>Windows</h2>
+      <FaWindows className='windows-logo' />
+      <h2> Windows</h2>
       {/* <h2>{feed.name}</h2> */}
 
       <div className='postcard-card'>

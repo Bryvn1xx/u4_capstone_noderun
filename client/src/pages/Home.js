@@ -1,5 +1,4 @@
 import HomeComponent from "../components/HomeComponent"
-
 // import HomeComponent from '../components/HomeComponent'
 import PostCard from '../components/PostCard'
 const Home = ({ feed, posts }) => {
