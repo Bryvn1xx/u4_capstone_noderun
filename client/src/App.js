@@ -21,13 +21,6 @@ const App = () => {
   const [windowsFeed, setWindowsFeed] = useState()
 
 
-  //     const comments = await axios.get(`http://localhost:3001/api/comments/1`)
-  //     // console.log('comments', comments.data)
-  //     setComments(comments.data)
-  //   } catch (err) {
-  //     console.log(err)
-  //   }
-  // }
   const getFeeds = async (req, res) => {
     try {
       const feed = await axios.get('http://localhost:3001/api/feed')
