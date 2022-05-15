@@ -18,7 +18,7 @@ const WindowsPostCard = ({ windowsPost }) => {
         <Link to={`/windowsfeed/posts/${windowsPost.id}`} >
           <img className='postcard-img' src={windowsPost.img} alt='404'></img>
         </Link>
-        <div>{windowsPost.name}</div>
+        <h2 className='post-name'> {windowsPost.name}</h2>
         <div className='homepage-buttons'>
           <button className='dlt-btn' onClick={() => deletePost(windowsPost.id)}>Delete</button>
           <Link className='edt-btn' to={`/updatepost/${windowsPost.id}`}>Edit</Link>
