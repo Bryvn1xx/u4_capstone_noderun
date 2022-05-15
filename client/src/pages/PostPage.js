@@ -102,8 +102,6 @@ const PostPage = () => {
                 value={addComment.postId}
                 onChange={(e) => setAddComment({ ...addComment, postId: e.target.value })}
               />
-
-
               <button className='form' type='submit'>Comment</button>
             </form>
           </div>
