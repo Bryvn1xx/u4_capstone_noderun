@@ -9,13 +9,11 @@ const Home = ({ feed, posts }) => {
 
   return (
     <div className='home-page'>
-      {/* <h2>{feed.name}</h2> */}
       <div className='home-block'>
         <img className='home-img' src='/noderun-logo.png'></img>
       </div>
       <h2 className='apple-logo'></h2>
       <div className='postcard-card'>
-        {/* <HomeComponent feed={feed} posts={posts} /> */}
 
         {posts &&
           posts.map((post) => (
