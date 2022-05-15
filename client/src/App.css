@@ -1,13 +1,15 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100&family=Poiret+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100&family=Poiret+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=MuseoModerno:wght@100&family=Poiret+One&display=swap');
 .App {
   height: 100vh;
   text-align: center;
   /* background-image: linear-gradient(to right, grey, white); */
   zoom: 80%;
   /* background-image: black; */
-  
+ 
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -60,12 +62,13 @@
 
 }
 .create-comment {
-  
+  font-size: 30px;
 }
 .create-comment-form {
   justify-content: center;
   padding: 20px;
   margin: 20px;
+  
 }
 .navbar {
   float: left;
@@ -207,9 +210,7 @@ a:hover {
 img:hover {
   opacity: 0.5;
 }
-.about-paragraph {
-  font-size: 20px;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
