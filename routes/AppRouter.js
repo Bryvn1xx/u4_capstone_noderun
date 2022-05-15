@@ -1,5 +1,4 @@
 const Router = require('express').Router()
-// const controller = require('../controllers/FeedController')
 const FeedRouter = require('./FeedRouter')
 const PostRouter = require('./PostRouter')
 const CommentRouter = require('./CommentRouter')
