@@ -59,8 +59,13 @@
   
 
 }
+.create-comment {
+  
+}
 .create-comment-form {
   justify-content: center;
+  padding: 20px;
+  margin: 20px;
 }
 .navbar {
   float: left;

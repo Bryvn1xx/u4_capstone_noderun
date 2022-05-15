@@ -84,7 +84,7 @@ const PostPage = () => {
             ))}
         </div>
         <div className='box'>
-          <h2>Create Comment</h2>
+          <h2 className='create-comment'>Create Comment</h2>
           <div className='create-comment-form'>
             <form className='create-comment-form' onSubmit={handleSubmit}>
               <input
