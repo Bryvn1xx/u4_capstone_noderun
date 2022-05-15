@@ -66,7 +66,6 @@ const PostPage = () => {
       <div className='postpage-bar'>
         <h2>PostPage</h2>
         <h2>{post.name}</h2>
-        {/* <button type='button' value='solved' onClick={(() => solved())}>solved</button> */}
       </div >
       <div className='postpage-main'>
 
@@ -78,8 +77,6 @@ const PostPage = () => {
               <div>
                 <h2 className='comment-post'>{comment.name}:</h2>
                 <h2 className='comment-post-desc'>{comment.description}</h2>
-                {/* <button onClick={() => clickLike(setLikes)}>Like{likes}</button> */}
-                {/* <button className='dlt-cmnt' onClick={() => deleteComment(comment.id)}>Delete</button> */}
               </div>
             ))}
         </div>
