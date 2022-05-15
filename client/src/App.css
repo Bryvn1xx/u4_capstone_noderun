@@ -44,7 +44,10 @@
   width: 50%;
   float: right;
 }
-
+.support-img {
+  height: 550px;
+  width: 550px;
+}
 .about-paragraph {
   
   width: 50%;
