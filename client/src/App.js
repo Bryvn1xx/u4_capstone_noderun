@@ -54,7 +54,6 @@ const App = () => {
     getFeeds()
     getPostsByFeed()
     getWindowsFeed()
-    // getCommentsByPost()
   }, [])
 
   return (
