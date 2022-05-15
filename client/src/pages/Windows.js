@@ -10,10 +10,9 @@ const Windows = ({ windowsFeed, posts }) => {
     < div className='home-page' >
       <FaWindows className='windows-logo' />
       <h2> Windows</h2>
-      {/* <h2>{feed.name}</h2> */}
+
 
       <div className='postcard-card'>
-        {/* <HomeComponent feed={feed} posts={posts} /> */}
 
         {windowsFeed &&
           windowsFeed.map((windowsPost) => (
