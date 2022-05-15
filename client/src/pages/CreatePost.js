@@ -70,7 +70,7 @@ const CreatePost = () => {
             value={addPost.feedId}
             onChange={(e) => setAddPost({ ...addPost, feedId: e.target.value })}
           />
-          <button type='submit'>Create</button>
+          <button className='form' type='submit'>Create</button>
         </form>
       </div>
     </div>
