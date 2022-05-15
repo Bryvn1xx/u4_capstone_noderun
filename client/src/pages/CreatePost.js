@@ -18,12 +18,7 @@ const CreatePost = () => {
       addPost
     )
   }
-  // const handleChange = (e) => {
-  //   setAddPost({
-  //     ...addPost,
-  //     [e.target.name]: e.target.value
-  //   })
-  // }
+
 
   return (
     <div>

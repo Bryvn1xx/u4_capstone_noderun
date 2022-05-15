@@ -11,7 +11,6 @@ const WindowsPostCard = ({ windowsPost }) => {
     navigate('/about')
   }
 
-  // console.log('feed', feed)
   return (
     <div className='postcard-summary'>
       <div className='postcard-container'>
