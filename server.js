@@ -2,11 +2,8 @@ const express = require('express')
 const app = require('express')()
 const cors = require('cors')
 const logger = require('morgan')
-// const FeedController = require('./controllers/FeedController')
-// const PostController = require('./controllers/PostController')
 const AppRouter = require('./routes/AppRouter')
 const PORT = process.env.PORT || 3001
-// const controller = require('./controllers/FeedController')
 
 app.use(cors())
 app.use(logger('dev'))
