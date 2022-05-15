@@ -35,7 +35,9 @@
   font-size: 35px;
   width: 50%;
   float: left;
-  text-align: left
+  text-align: left;
+  padding: 25px;
+  margin: 25px
 }
 .about-paragraph {
   
