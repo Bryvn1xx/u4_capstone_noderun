@@ -19,8 +19,10 @@
 - Sequelize
 - JavaScript
 - CSS
+
 ## Getting Started 
 ### npm i
+
 # Screenshots
 
 ## ERD
