@@ -7,7 +7,7 @@ const WindowsPostCard = ({ windowsPost }) => {
 
 
   const deletePost = async (postId) => {
-    await axios.delete(`http://localhost:3001/api/posts/${postId}`)
+    await axios.delete(`https://noderun01.herokuapp.com/api/posts/${postId}`)
     navigate('/about')
   }
 

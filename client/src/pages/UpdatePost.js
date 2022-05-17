@@ -17,7 +17,7 @@ const UpdatePost = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     const res = await axios.put(
-      `http://localhost:3001/api/posts/${post_id}/1`,
+      `https://noderun01.herokuapp.com/api/posts/${post_id}/1`,
       updatePost
     )
   }

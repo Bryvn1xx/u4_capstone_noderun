@@ -23,7 +23,7 @@ const App = () => {
 
   const getFeeds = async (req, res) => {
     try {
-      const feed = await axios.get('http://localhost:3001/api/feed')
+      const feed = await axios.get('https://noderun01.herokuapp.com/api/feed')
       // console.log('feeds', feed.data)
       setFeed(feed.data)
     } catch (err) {
@@ -33,7 +33,7 @@ const App = () => {
 
   const getWindowsFeed = async (req, res) => {
     try {
-      const windowsFeed = await axios.get(`http://localhost:3001/api/posts/2`)
+      const windowsFeed = await axios.get(`https://noderun01.herokuapp.com/api/posts/2`)
       console.log('windowsfeed', windowsFeed)
       setWindowsFeed(windowsFeed.data)
     } catch (err) {
@@ -43,7 +43,7 @@ const App = () => {
 
   const getPostsByFeed = async (req, res) => {
     try {
-      const posts = await axios.get(`http://localhost:3001/api/posts/1`)
+      const posts = await axios.get(`https://noderun01.herokuapp.com/api/posts/1`)
       // console.log('posts', posts.data)
       setPosts(posts.data)
     } catch (err) {

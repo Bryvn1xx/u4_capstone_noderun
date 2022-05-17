@@ -15,7 +15,7 @@ const WindowsPostPage = () => {
 
   const getPost = async () => {
     try {
-      const post = await axios.get(`http://localhost:3001/api/posts/${postId}/2`)
+      const post = await axios.get(`https://noderun01.herokuapp.com/api/posts/${postId}/2`)
       console.log('8765post', post.data[0])
       setPost(post.data[0])
     } catch (err) {
@@ -25,7 +25,7 @@ const WindowsPostPage = () => {
 
   const getCommentsByPost = async () => {
     try {
-      const comments = await axios.get(`http://localhost:3001/api/comments/${postId}`)
+      const comments = await axios.get(`https://noderun01.herokuapp.com/api/comments/${postId}`)
       console.log('8765omments', comments.data)
       setComments(comments.data)
     } catch (err) {
@@ -39,7 +39,7 @@ const WindowsPostPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     const res = await axios.post(
-      `http://localhost:3001/api/comments/${postId}`,
+      `https://noderun01.herokuapp.com/api/comments/${postId}`,
       addComment
     )
 
